@@ -19,6 +19,7 @@
       height: 64px;
       line-height: 64px;
       color: black;
+      background-color: #ccc;
     }
 
     .grey-text {
@@ -222,9 +223,10 @@
     const db = firebase.firestore()
 
     //update firestore settings
-    db.settings({ timestampsInSnapshots: true }); /*old version-*/
-        // db.settings({timestamp: true});
-
+    db.settings({
+      timestampsInSnapshots: true
+    }); /*old version-*/
+    // db.settings({timestamp: true});
   </script>
   <!--JavaScript at end of body for optimized loading-->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
